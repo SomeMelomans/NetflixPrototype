@@ -26,7 +26,6 @@
     "eslint-config-react-app": "^5.1.0",
     "eslint-loader": "3.0.2",
     "eslint-plugin-flowtype": "3.13.0",
-    "eslint-plugin-import": "2.18.2",
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-react": "7.16.0",
     "eslint-plugin-react-hooks": "^1.6.1",
@@ -76,6 +75,18 @@
     ],
     "rules": {
       "react/jsx-filename-extension": "off"
+    },
+    "settings": {
+      "import/resolver": {
+        "alias": {
+          "map": [
+            ["@components", "./src/components"],
+            ["@containers", "./src/containers"],
+            ["@images", "./src/images"],
+            ["@theme", "./src/theme"]
+          ]
+        }
+      }
     }
   },
   "browserslist": {
@@ -91,6 +102,8 @@
     ]
   },
   "devDependencies": {
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.18.2",
     "link-module-alias": "^1.2.0"
   },
   "jest": {
