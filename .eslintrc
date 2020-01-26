@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": "off",
+    "quotes": [2, "double", {"avoidEscape": true}]
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@components","./src/components"],
+          ["@containers", "./src/containers"],
+          ["@images", "./src/images"],
+          ["@theme","./src/theme"]
+        ]
+      }
+    }
+  }
+}

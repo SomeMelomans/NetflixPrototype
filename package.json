@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.7.4",
+    "@babel/runtime": "^7.8.3",
     "@svgr/webpack": "4.3.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -67,27 +68,6 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js"
-  },
-  "eslintConfig": {
-    "extends": [
-      "airbnb",
-      "prettier"
-    ],
-    "rules": {
-      "react/jsx-filename-extension": "off"
-    },
-    "settings": {
-      "import/resolver": {
-        "alias": {
-          "map": [
-            ["@components", "./src/components"],
-            ["@containers", "./src/containers"],
-            ["@images", "./src/images"],
-            ["@theme", "./src/theme"]
-          ]
-        }
-      }
-    }
   },
   "browserslist": {
     "production": [
